@@ -14,7 +14,11 @@ const reducer = (state, action) => {
                 ...state,
                 basket: [...state.basket, action.item],
             };
-
+        case "EMPTY_BASKET":
+            return {
+                ...state,
+                basket: []
+            };
         case "REMOVE_FROM_BASKET":
             const index = state.basket.findIndex((basketItem) => basketItem.id === action.id);
             // this will only find the first match and return it to you..only cuts out the first of any repetitive items and leaves the rest of the repeating items
