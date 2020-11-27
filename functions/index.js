@@ -4,7 +4,7 @@ const cors = require("cors");
 const { config } = require('firebase-functions');
 
 const stripe = require("stripe")(
-    "sk_test_51HqZjKDi2Q8yJBKCfZjsziE9YnGUl1BQctQM5auFgz4hq53f83o4LJF44jhRS7PYzLUHcpRMjGP1vEa0NgTcUQfE00NfleSgIA"
+    // <<insert stripe private key here>>
     );
 
 // API creation
